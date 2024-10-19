@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <div id="rock"><img style="border-radius: 50%; width: 120px; height: 80px;" alt="" src="rock.png" height="100px"/>
+        </div>
+        <div id="paper"> <img style="border-radius: 50%; width: 120px; height: 80px;" alt="" src="paper.png" height="100px" />
+            </div>
+        <div id="scissor"> <img style="border-radius: 50%; width: 120px; height: 80px;" alt="" src="scissor.png" height="100px"/>
+            </div>  
+    </div>
+    <div id="a">
+        <div id="my">My score:</div>
+        <div id="comp">Comp Score:</div>
+    </div>
+
+    <div id="box">
+        <div id="myscore"></div>
+        <div id="compscore"></div>
+    </div>
+    <div id="result"></div>  
+
+
+    <script>
+        const rock=document.getElementById('rock')
+        const paper=document.getElementById('paper')
+        const scissor=document.getElementById('scissor')
+        const result=document.getElementById('result')
+        const myscore=document.getElementById('myscore')
+        const compscore=document.getElementById('compscore')
+
+
+        function getComputerChoice(){
+            const random=Math.floor(Math.random() * 3) + 1;
+            console.log(random);
+            
+        return  random;
+        console.log();
+        
+        }        
+
+        let mycount=0;
+        let compcount=0;
+        rock.onclick=function(){
+            
+            const random=getComputerChoice();
+            if(random==1){
+                result.innerText="TIE";
+            }
+            else if(random==2){
+                result.innerText="COMPUTER WINS"
+                compcount++;
+                compscore.textContent=compcount;
+    
+            }
+            else{
+                result.innerText="YOU WIN"
+                mycount++;
+                myscore.textContent=mycount;
+            }
+        }
+        paper.onclick=function(){
+           
+            const random=getComputerChoice();
+            if(random==1){
+                result.innerText="YOU WIN";
+                mycount++;
+                myscore.textContent=mycount;
+            }
+            else if(random==2){
+                result.innerText="TIE"
+            }
+            else{
+                result.innerText="COMPUTER WINS"
+                compcount++;
+                compscore.textContent=compcount;
+            }
+        }
+        scissor.onclick=function(){
+            
+            const random=getComputerChoice();
+            if(random==1){
+                result.innerText="COMPUTER WINS";
+                compcount++;
+                compscore.textContent=compcount;
+            }
+            else if(random==2){
+                result.innerText="YOU WIN"
+                mycount++;
+                myscore.textContent=mycount
+            }
+            else{
+                result.innerText="TIE"
+            }
+        }
+    </script>
+</body>
+</html>

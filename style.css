@@ -1,0 +1,107 @@
+body{
+    margin: 0;
+    background-color:black;
+}
+#container{
+    height: 300px;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+#rock{
+    background-color: black;
+    height: 100px;
+    width: 100px;
+    color: aliceblue;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+#paper{
+    background-color: black;
+    height: 100px;
+    width: 100px;
+    color: aliceblue;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+#scissor{
+    background-color: black;
+    height: 100px;
+    width: 100px;
+    color: aliceblue;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+#result{
+    background-color: rgb(215, 41, 224);
+    color: black;
+    height: 50px;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 40px;
+    display:flex;
+    justify-content: center;
+}
+#myscore{
+    width: 120px;
+    height: 50px;
+    background-color:rgb(215, 41, 224);
+    margin: 0px 20px 20px 20px;
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#compscore{
+    width: 120px;
+    height: 50px;
+    background-color:rgb(215, 41, 224);
+    margin: 0px 20px 20px 20px;
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+#a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#my{
+    background-color:rgb(215, 41, 224);
+    width: 120px;
+    height:20px ;
+    margin: 20px 20px 0px 20px ;
+    color: black;
+    font-weight: 600;
+}
+#comp{
+    background-color: rgb(215, 41, 224);
+    width: 120px;
+    height:20px ;
+    margin: 20px 20px 0px 20px;
+    color:black;
+    font-weight: 600;
+}
